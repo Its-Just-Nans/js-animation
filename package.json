@@ -4,7 +4,8 @@
   "description": "Create animation with javascript and timecut",
   "main": "index.js",
   "scripts": {
-    "create": "timecut \"http://192.168.56.1/space.html\" --duration=5 --viewport=500,500 --output=animation.mp4"
+    "create": "timecut 'http://localhost:8080/space.html' --duration=5 --viewport=500,500 --output=animation.mp4",
+    "server": "http-server -p 8080"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,8 @@
   },
   "homepage": "https://github.com/Its-Just-Nans/js-animation#readme",
   "dependencies": {
+    "colors": "^1.4.1",
+    "http-server": "^13.0.0",
     "timecut": "^0.3.2"
   }
 }
